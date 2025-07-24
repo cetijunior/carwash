@@ -53,6 +53,101 @@ Welcome to the official repository for **Market/Carwash Lami**, a responsive and
 └── vite.config.js
 ```
 
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/market-carwash-lami.git
+cd market-carwash-lami
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run Locally
+
+```bash
+npm run dev
+```
+
+The site will be available at [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🌐 Deployment
+
+### Recommended Platform:
+[Vercel](https://vercel.com) – Seamless React/Vite support.
+
+### To deploy:
+
+1. Push this project to GitHub.
+2. Go to Vercel → Import Project → Select your GitHub repo.
+3. Vercel will auto-detect Vite and deploy it.
+
+---
+
+## ✏️ Customization Notes
+
+- You can replace the rotating text in `HeroSection.jsx`:
+  ```jsx
+  texts={["Market", "Car Wash", "Parking"]}
+  ```
+
+- Replace logos in `/public/` with updated ones if needed (keep the same filename).
+
+- Social media and contact info is editable in `Navbar.jsx` and `Footer.jsx`.
+
+---
+
+## 🧼 Services Included
+
+- 🛒 **Mini Market:** Fresh produce, groceries, snacks, beverages, and essentials.
+- 🚗 **Car Wash & Detailing:** Hand wash, pressure wash, full interior/exterior detailing.
+- 🅿️ **Parking Space:** Free parking while shopping or using the carwash.
+
+---
+
+## 📦 Version History
+
+| Version | Date       | Notes                                  |
+|---------|------------|----------------------------------------|
+| 1.0.0   | 2025-07-24 | Initial version of Market/Carwash site |
+| 1.0.1   | 2025-07-25 | Added rotating logo and emoji support  |
+
+---
+
+## 👨‍💻 Maintained by
+
+This site was built and is maintained by [ca-webservices.com](https://ca-webservices.com) 🇦🇱
+
+---
+
+## 📸 Screenshot
+
+![Preview](./public/Banner.png)
+
+---
+
+## 📬 Contact
+
+Need help? Want to upgrade your business online presence?
+
+📧 Email: contact@ca-webservices.com  
+📍 Location: Albania, EU  
+🌐 Website: [ca-webservices.com](https://ca-webservices.com)
+
+---
+
+## 📄 License
+
+This project is for personal/commercial use. Do not resell without permission from CA Web Services.
 
 
 
