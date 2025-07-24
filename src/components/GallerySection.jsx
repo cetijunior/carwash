@@ -21,7 +21,7 @@ export default function GallerySection() {
     ];
 
     return (
-        <section id="gallery" className="py-24 bg-gradient-to-b from-white to-gray-50 px-6">
+        <section id="gallery" className="py-2 bg-gradient-to-b from-white to-gray-50 px-6">
             <div className="max-w-6xl mx-auto">
                 <motion.h2
                     className="text-4xl font-bold text-green-600 text-center mb-4"

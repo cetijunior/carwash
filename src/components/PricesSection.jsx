@@ -66,9 +66,12 @@ export default function PricesSection() {
                                 <span className="font-medium">24 Hours</span>
                                 <span className="text-lg font-bold text-gray-900">€10 / 1000 LEK</span>
                             </li>
-                            <li className="flex justify-between">
+                            <li className="flex justify-between border-b pb-2">
                                 <span className="font-medium">While Shopping</span>
                                 <span className="text-lg font-bold text-yellow-600">Free</span>
+                            </li>
+                            <li className="flex justify-between">
+                                <span className="font-medium">*Clients that choose to park with us can get a <span className="underline"> Free Water Bottle</span> from the store</span>
                             </li>
                         </ul>
                     </motion.div>
