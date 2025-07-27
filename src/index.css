@@ -31,3 +31,27 @@ html {
     animation: colorPulse 6s infinite ease-in-out;
   }
 }
+
+
+@keyframes colorPulse {
+
+  0%,
+  100% {
+    border-color: #22c55e;
+    /* green-500 */
+  }
+
+  33% {
+    border-color: #3b82f6;
+    /* blue-500 */
+  }
+
+  66% {
+    border-color: #facc15;
+    /* yellow-400 */
+  }
+}
+
+.animate-colorPulse {
+  animation: colorPulse 15s ease-in-out infinite;
+}
