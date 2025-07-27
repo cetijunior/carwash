@@ -7,21 +7,29 @@ export default function HeroSection() {
     return (
         <section
             id="home"
-            className="relative h-screen flex items-center justify-center bg-cover bg-center text-white px-4"
+            className="relative h-screen flex items-center justify-center bg-center bg-no-repeat bg-cover text-white px-4"
             style={{ backgroundImage: "url('/Banner.png')" }}
         >
+
+            {/* Decorative Circle (Mobile Only) */}
+            <div className="absolute top-[19%] left-[50%] transform -translate-x-1/2 sm:hidden z-10">
+                <div className="w-[350px] h-[350px] border-8 border-double rounded-full animate-colorPulse"></div>
+            </div>
+
+
+
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/70 to-black/90 z-0" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/70 to-black/90 z-0" />
 
             {/* Content */}
             <motion.div
-                className="relative top-[28%] sm:top z-10 text-center max-w-xl mx-auto flex flex-col items-center justify-center"
+                className="relative z-10 top-[28%] text-center flex flex-col items-center justify-center max-w-xl px-4 sm:px-0"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
             >
-                {/* Mobile-Optimized Heading */}
-                <h1 className="text-3xl xs:text-4xl sm:text-5xl font-bold mb-6 leading-snug sm:leading-tight">
+                {/* Heading */}
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 sm:mb-6">
                     <span className="block">Welcome to</span>
                     <span className="block">
                         <RotatingText
@@ -43,16 +51,16 @@ export default function HeroSection() {
 
                 {/* Subheading */}
                 <motion.p
-                    className="text-base xs:text-lg sm:text-xl text-gray-200 mb-8 px-2 leading-relaxed"
+                    className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 max-w-md"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1 }}
                 >
-                    Groceries, hand-wash, and safe parking — right here in Zall Herr.
+                    Groceries, hand-wash, and safe parking — all in Zall Herr.
                 </motion.p>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center">
+                <div className="flex flex-col sm:flex-row gap-4 w-full max-w-xs sm:max-w-none sm:w-auto">
                     <a
                         href="#services"
                         className="bg-white text-black w-full sm:w-auto px-6 py-3 rounded-full shadow-md hover:bg-gray-200 transition font-semibold text-sm sm:text-base text-center"
