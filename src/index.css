@@ -1,57 +1,67 @@
 @import "tailwindcss";
 
+@theme {
+  /* Brand — navy & gold aligned with Kompleksi Edi Lame identity */
+  --color-brand-navy: #12263a;
+  --color-brand-navy-muted: #1e3a52;
+  --color-brand-gold: #b8954a;
+  --color-brand-gold-dark: #8f6f2a;
+  --color-brand-cream: #f7f5f0;
+  --color-brand-paper: #faf9f7;
+
+  --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  @apply font-sans text-slate-800 antialiased;
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  background-color: var(--color-brand-paper);
+  background-image:
+    radial-gradient(ellipse 120% 80% at 0% -20%, rgba(18, 38, 58, 0.06) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 60% at 100% 0%, rgba(184, 149, 74, 0.05) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(184, 149, 74, 0.25);
+  color: #12263a;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Subtle paper texture */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  opacity: 0.025;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
 @layer utilities {
-  @keyframes colorPulse {
-
-    0%,
-    100% {
-      border-color: #22c55e;
-      /* Green-500 */
-      box-shadow: 0 0 300px rgba(34, 197, 94, 0.3);
-    }
-
-    33% {
-      border-color: #3b82f6;
-      /* Blue-500 */
-      box-shadow: 0 0 300px rgba(59, 130, 246, 0.3);
-    }
-
-    66% {
-      border-color: #facc15;
-      /* Yellow-400 */
-      box-shadow: 0 0 300px rgba(250, 204, 21, 0.3);
-    }
+  .glass {
+    @apply border shadow-lg;
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(18, 38, 58, 0.08);
+    backdrop-filter: blur(12px);
   }
 
-  .animate-colorPulse {
-    animation: colorPulse 6s infinite ease-in-out;
-  }
-}
-
-
-@keyframes colorPulse {
-
-  0%,
-  100% {
-    border-color: #22c55e;
-    /* green-500 */
+  .section-label {
+    @apply text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold;
   }
 
-  33% {
-    border-color: #3b82f6;
-    /* blue-500 */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-brand-paper;
   }
-
-  66% {
-    border-color: #facc15;
-    /* yellow-400 */
-  }
-}
-
-.animate-colorPulse {
-  animation: colorPulse 15s ease-in-out infinite;
 }

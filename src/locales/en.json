@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "Kompleksi Edi Lame | Zall Herr"
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "gallery": "Gallery",
+    "prices": "Prices",
+    "map": "Location",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "primary": "Primary navigation"
+  },
+  "lang": {
+    "en": "English",
+    "sq": "Shqip",
+    "switch": "Language"
+  },
+  "brand": {
+    "line": "Kompleksi \"Edi Lame\"",
+    "location": "Zall Herr",
+    "locationFull": "Zall Herr, Albania"
+  },
+  "hero": {
+    "kompleksi": "Kompleksi",
+    "name": "“Edi Lame”",
+    "lead": "Your one-stop spot in Zall Herr — a mini to mid-size market, careful hand car wash, and easy parking. Simple layout, friendly service, local quality.",
+    "ctaServices": "View services",
+    "ctaWhatsapp": "WhatsApp",
+    "tagline": "Open daily · Quick service · Local favourite",
+    "logoAlt": "Kompleksi Edi Lame logo",
+    "highlights": [
+      {
+        "title": "The Market",
+        "text": "Mini to mid-size shop with fresh produce, dairy, drinks, snacks, bread, and household essentials — restocked often."
+      },
+      {
+        "title": "Car wash",
+        "text": "Hand wash inside and out, done with care. From a quick rinse to a full detail — clear prices, no rush."
+      },
+      {
+        "title": "Parking",
+        "text": "Straightforward parking while you shop or wash your car. Open, easy access in the same complex."
+      }
+    ]
+  },
+  "services": {
+    "label": "What we offer",
+    "title": "Our services",
+    "intro": "Three services in one place at Kompleksi “Edi Lame” — groceries, car care, and parking.",
+    "enquire": "Contact us →",
+    "items": [
+      {
+        "title": "The Market",
+        "subtitle": "Mini to mid size",
+        "tag": "Shop",
+        "desc": "We stock what you need day to day — fruit and vegetables, dairy, drinks, snacks, bread, cleaning products, and more. Compact but full, with regular restocks so things stay fresh."
+      },
+      {
+        "title": "Car wash",
+        "subtitle": "",
+        "tag": "Care",
+        "desc": "Every vehicle is washed by hand — exterior, interior, or both. No tunnel machines: just water, soap, and attention. Affordable and neighbourly."
+      },
+      {
+        "title": "Parking",
+        "subtitle": "",
+        "tag": "Park",
+        "desc": "Spaces out front when you are visiting the market or car wash. No fuss — pull in, do what you came for, and head off when you are ready."
+      }
+    ]
+  },
+  "about": {
+    "label": "About us",
+    "title": "One complex, three everyday services",
+    "body": "Kompleksi “Edi Lame” in Zall Herr brings together a practical market, a trusted hand car wash, and simple parking — so you can shop, clean your car, and carry on without driving across town.",
+    "bullets": [
+      "Groceries and essentials in a mini to mid-size market",
+      "Hand car wash with clear, honest service",
+      "Parking on site for customers"
+    ]
+  },
+  "prices": {
+    "label": "Prices",
+    "title": "Simple, transparent pricing",
+    "intro": "No hidden fees — just clear rates. We prefer cash (LEK or EUR); see the note below.",
+    "carWashTitle": "Car wash",
+    "parkingTitle": "Parking",
+    "marketTitle": "The Market",
+    "marketIntro": "Everyday groceries at fair daily prices. Ask in store for today’s offers.",
+    "lines": {
+      "quickRinse": "Quick rinse",
+      "exterior": "Exterior wash",
+      "inOut": "Interior + exterior",
+      "fullDetail": "Full detail",
+      "hours1to3": "1 – 3 hours",
+      "hours4to6": "4 – 6 hours",
+      "hours24": "24 hours",
+      "whileShopping": "While shopping",
+      "free": "Free",
+      "parkingNote": "Clients who park with us can get a free water bottle from the store.",
+      "eurLek": "{{eur}} / {{lek}} LEK"
+    },
+    "cashTitle": "Payment",
+    "cashBody": "We kindly ask customers to pay in cash where possible, preferably in Albanian LEK. We also accept Euros.",
+    "cashNoCards": "We do not accept cards or digital payments at this time."
+  },
+  "map": {
+    "title": "Find us",
+    "subtitle": "Kompleksi “Edi Lame” — Zall Herr, Albania",
+    "banner": "Two spots, same neighbourhood — choose the map you need.",
+    "marketName": "The Market",
+    "carWashName": "Car wash"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "We are here to help",
+    "body": "Questions about the market, car wash, or parking? Call or message us — we will get back to you as soon as we can.",
+    "call": "Call +355 69 693 9405",
+    "whatsapp": "WhatsApp",
+    "note": "We usually reply within the same day on WhatsApp."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "intro": "A look at the market, car wash, and parking at Kompleksi “Edi Lame”.",
+    "explore": "Explore",
+    "rotating": ["The Market", "Car wash", "Parking"],
+    "categories": {
+      "market": "The Market",
+      "carWash": "Car wash",
+      "parking": "Parking"
+    },
+    "imageAlt": "{{category}} — Kompleksi Edi Lame"
+  },
+  "footer": {
+    "tagline": "Market, car wash, and parking — one convenient place in Zall Herr.",
+    "navTitle": "Navigate",
+    "visitTitle": "Visit",
+    "home": "Home",
+    "hours": "Open 08:00 – 21:00 (Mon–Sun)",
+    "rights": "© {{year}} {{brand}}. All rights reserved.",
+    "credit": "Site by ca-webservices.com",
+    "caAlt": "CA Web Services"
+  }
+}

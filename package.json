@@ -12,9 +12,11 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "framer-motion": "^12.23.6",
+    "i18next": "^25.10.9",
     "icons": "^1.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-i18next": "^16.6.6",
     "react-icons": "^5.5.0",
     "tailwindcss": "^4.1.11",
     "yet-another-react-lightbox": "^3.25.0"

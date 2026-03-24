@@ -1,150 +1,151 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import {
-    FaShoppingCart,
-    FaShower,
-    FaParking,
-    FaWhatsapp,
-    FaPhoneAlt,
-    FaMapMarkerAlt,
-    FaClock
-} from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import { FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
+
+const LOGO_SRC = "/KompleksiEdiLame.jpg";
 
 export default function HeroSection() {
-    const [currentService, setCurrentService] = useState(0);
+  const { t } = useTranslation();
+  const highlights = t("hero.highlights", { returnObjects: true });
 
-    const services = [
-        {
-            icon: FaShoppingCart,
-            name: "Market",
-            color: "from-emerald-500 to-green-600",
-            desc: "Quality groceries daily"
-        },
-        {
-            icon: FaShower,
-            name: "Car Wash",
-            color: "from-cyan-500 to-blue-600",
-            desc: "Premium car care"
-        },
-        {
-            icon: FaParking,
-            name: "Parking",
-            color: "from-purple-500 to-indigo-600",
-            desc: "Safe & convenient"
-        }
-    ];
+  return (
+    <section
+      id="home"
+      className="relative pt-28 pb-20 lg:pt-36 lg:pb-28 px-4 sm:px-6 lg:px-8 overflow-hidden"
+    >
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.35]"
+        aria-hidden
+      >
+        <div className="absolute -top-32 right-[-10%] w-[min(520px,90vw)] h-[min(520px,90vw)] rounded-full bg-brand-navy/[0.07] blur-3xl" />
+        <div className="absolute bottom-0 left-[-15%] w-[min(400px,80vw)] h-[min(400px,80vw)] rounded-full bg-brand-gold/[0.08] blur-3xl" />
+      </div>
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentService((prev) => (prev + 1) % services.length);
-        }, 3000);
-        return () => clearInterval(interval);
-    }, []);
+      <div className="relative z-10 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-[1fr_min(340px,100%)] gap-14 lg:gap-16 items-center">
+          <div>
+            <motion.p
+              className="section-label mb-4"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              {t("brand.locationFull")}
+            </motion.p>
+            <motion.h1
+              className="font-display text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-semibold text-brand-navy tracking-tight leading-[1.12]"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.55, delay: 0.05 }}
+            >
+              <span className="block text-brand-navy-muted/90 text-2xl sm:text-3xl lg:text-4xl font-medium mb-2">
+                {t("hero.kompleksi")}
+              </span>
+              <span className="block">{t("hero.name")}</span>
+            </motion.h1>
+            <motion.p
+              className="mt-6 text-lg sm:text-xl lg:text-[1.35rem] text-slate-600 max-w-xl leading-relaxed"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.12 }}
+            >
+              {t("hero.lead")}
+            </motion.p>
 
-    return (
-        <section id="hero" className="relative  bg-gradient-to-br from-slate-50 via-white to-green-50 overflow-hidden">
-            {/* Floating background lights */}
-            <div className="absolute inset-0 overflow-hidden z-0">
-                <motion.div
-                    className="absolute -top-40  -right-40 w-80 h-80 bg-gradient-to-br from-green-200/30 to-emerald-300/20 rounded-full blur-3xl"
-                    animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
-                    transition={{ duration: 4, repeat: Infinity }}
-                />
-                <motion.div
-                    className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-200/20 to-purple-300/20 rounded-full blur-3xl"
-                    animate={{ scale: [1.2, 1, 1.2], opacity: [0.2, 0.5, 0.2] }}
-                    transition={{ duration: 5, repeat: Infinity, delay: 1 }}
-                />
+            <motion.div
+              className="mt-10 flex flex-wrap gap-4"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <a
+                href="#services"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-brand-navy text-white font-semibold text-base shadow-md hover:bg-brand-navy-muted transition-colors focus-ring"
+              >
+                {t("hero.ctaServices")}
+              </a>
+              <a
+                href="https://wa.me/355696939405"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border-2 border-brand-navy text-brand-navy font-semibold text-base hover:bg-brand-navy/5 transition-colors focus-ring"
+              >
+                <FaWhatsapp className="text-xl text-[#25D366]" aria-hidden />
+                {t("hero.ctaWhatsapp")}
+              </a>
+            </motion.div>
+
+            <motion.div
+              className="mt-12 text-base text-slate-500 max-w-xl leading-relaxed"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.35, duration: 0.5 }}
+            >
+              <span className="inline-flex items-center gap-2">
+                <FaMapMarkerAlt className="text-brand-gold shrink-0" aria-hidden />
+                {t("brand.location")}
+              </span>
+              <span className="mx-2 hidden sm:inline text-slate-300" aria-hidden>
+                ·
+              </span>
+              <span className="block sm:inline mt-1 sm:mt-0">{t("hero.tagline")}</span>
+            </motion.div>
+          </div>
+
+          <motion.div
+            className="flex justify-center lg:justify-end"
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+          >
+            <div className="relative w-full max-w-[320px]">
+              <div
+                className="absolute inset-[-8%] rounded-full bg-gradient-to-br from-brand-gold/20 to-brand-navy/10 blur-2xl"
+                aria-hidden
+              />
+              <div className="relative glass rounded-3xl p-8 lg:p-10 flex flex-col items-center text-center border border-brand-navy/10">
+                <div className="rounded-full p-1 ring-2 ring-brand-gold/45 ring-offset-4 ring-offset-white">
+                  <img
+                    src={LOGO_SRC}
+                    alt={t("hero.logoAlt")}
+                    width={200}
+                    height={200}
+                    className="w-44 h-44 sm:w-52 sm:h-52 rounded-full object-cover"
+                  />
+                </div>
+                <p className="mt-8 font-display text-2xl lg:text-[1.75rem] font-semibold text-brand-navy">
+                  {t("brand.line")}
+                </p>
+                <p className="mt-1 text-sm uppercase tracking-[0.2em] text-brand-gold-dark">
+                  {t("brand.location")}
+                </p>
+              </div>
             </div>
+          </motion.div>
+        </div>
 
-            <div className="relative top-5 z-10  mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
-                {/* Text Side */}
-                <motion.div
-                    className="space-y-8"
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
-                >
-                    <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-green-100">
-                        <FaMapMarkerAlt className="text-green-600 text-sm" />
-                        <span className="text-sm font-medium text-gray-700">Zall Herr, Tirana</span>
-                    </div>
-
-                    <h1 className="text-5xl lg:text-6xl font-black text-gray-900 leading-tight">
-                        Welcome to,{" "}
-                        <div>
-                            <motion.span
-                                key={currentService}
-                                className={`bg-gradient-to-r ${services[currentService].color} bg-clip-text text-transparent`}
-                                initial={{ opacity: 0, y: 30 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -30 }}
-                                transition={{ duration: 0.5 }}
-                            >
-                                {services[currentService].name}
-                            </motion.span>
-                            <span className="">
-                                {" "} Lami
-                            </span>
-                        </div>
-                    </h1>
-
-
-
-                    <p className="text-xl text-gray-600 leading-relaxed max-w-xl">
-                        Your one-stop destination in the heart of Zall Herr. From fresh groceries to premium car care — we’ve got everything covered.
-                    </p>
-
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <a
-                            href="#services"
-                            className="bg-gradient-to-r from-green-600 to-emerald-500 text-white px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 font-bold text-center"
-                        >
-                            Explore Our Services
-                        </a>
-                        <a
-                            href="https://wa.me/355696939405"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center justify-center gap-3 bg-white border-2 border-green-500 text-green-600 px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-bold"
-                        >
-                            <FaWhatsapp className="text-xl" />
-                            Chat with Us
-                        </a>
-                    </div>
-
-                    <div className="flex items-center gap-2 text-sm text-gray-500 mt-4">
-                        <FaClock className="text-green-600" />
-                        <span>Open daily • Quick service • Local favorite</span>
-                    </div>
-                </motion.div>
-
-                {/* Icons / Service Cards */}
-                <motion.div
-                    className="grid grid-cols-2 gap-6"
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8, delay: 0.4 }}
-                >
-                    {services.map((service, index) => (
-                        <motion.div
-                            key={index}
-                            className={`group p-6 rounded-3xl shadow-lg bg-white hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col items-center justify-center text-center border border-gray-100 ${index === 2 ? "col-span-2" : ""
-                                }`}
-                            whileHover={{ scale: 1.05 }}
-                            onClick={() => setCurrentService(index)}
-                        >
-                            <div className={`p-4 rounded-full bg-gradient-to-br ${service.color}`}>
-                                <service.icon className="text-white text-3xl" />
-                            </div>
-                            <h3 className="mt-4 text-xl font-bold text-gray-800">{service.name}</h3>
-                            <p className="text-gray-500 text-sm">{service.desc}</p>
-                        </motion.div>
-                    ))}
-                </motion.div>
-            </div>
-        </section>
-    );
+        <motion.div
+          className="mt-20 grid sm:grid-cols-3 gap-6 lg:gap-8"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55, delay: 0.28 }}
+        >
+          {Array.isArray(highlights) &&
+            highlights.map((h) => (
+              <div
+                key={h.title}
+                className="rounded-2xl border border-brand-navy/10 bg-white/90 px-6 py-7 shadow-sm hover:shadow-md hover:border-brand-gold/25 transition-all duration-300"
+              >
+                <h2 className="font-display text-xl lg:text-2xl font-semibold text-brand-navy">
+                  {h.title}
+                </h2>
+                <p className="mt-3 text-slate-600 text-base leading-relaxed">{h.text}</p>
+              </div>
+            ))}
+        </motion.div>
+      </div>
+    </section>
+  );
 }

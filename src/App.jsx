@@ -1,3 +1,4 @@
+import DocumentTitle from './components/DocumentTitle'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection'
@@ -10,17 +11,19 @@ import FooterSection from './components/Footer'
 
 function App() {
   return (
-    <div className="font-sans">
+    <div className="font-sans min-h-screen flex flex-col">
+      <DocumentTitle />
       <Navbar />
-      <HeroSection />
-      {/* <AboutSection /> */}
-      <ServicesSection />
-      <PricesSection />
-      <MapSection />
-      <ContactSection />
-      <GallerySection />
+      <main className="flex-1">
+        <HeroSection />
+        <ServicesSection />
+        <AboutSection />
+        <PricesSection />
+        <MapSection />
+        <ContactSection />
+        <GallerySection />
+      </main>
       <FooterSection />
-
     </div>
   )
 }
