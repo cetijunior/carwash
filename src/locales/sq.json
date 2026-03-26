@@ -26,122 +26,122 @@
   "hero": {
     "kompleksi": "Kompleksi",
     "name": "“Edi Lame”",
-    "lead": "Një vend për tri gjëra në Zall Herr — një treg mini–mesatar, larje makinash me dorë dhe parkim i thjeshtë. Pamje e qartë, shërbim miqësor, cilësi vendase.",
+    "lead": "Destinacioni juaj në Zall Herr për tri shërbime kryesore: një market i plotë, larje makinash me dorë dhe parkim i garantuar. Shërbim miqësor, pastërti dhe cilësi vendase.",
     "ctaServices": "Shiko shërbimet",
     "ctaWhatsapp": "WhatsApp",
-    "tagline": "I hapur çdo ditë · Shërbim i shpejtë · I preferuari lokal",
+    "tagline": "Hapur çdo ditë · Shërbim i shpejtë · I preferuari i zonës",
     "logoAlt": "Logo Kompleksi Edi Lame",
     "highlights": [
       {
-        "title": "Tregu",
-        "text": "Dyqan mini–mesatar me perime e fruta, bulmet, pije, ushqime, bukë dhe artikuj shtëpie — furnizim i shpeshtë."
+        "title": "Marketi",
+        "text": "Supermarket mini–mesatar me fruta-perime të freskëta, bulmet, pije, ushqime bazë dhe artikuj shtëpiakë — furnizim i përditshëm."
       },
       {
-        "title": "Larja e makinave",
-        "text": "Larje me dorë, nga jashtë dhe brenda, me kujdes. Nga shpëlarja e shpejtë deri te detaji i plotë — çmime të qarta."
+        "title": "Lavazh makinash",
+        "text": "Larje me dorë me kujdes maksimal, nga jashtë dhe brenda. Nga shpëlarja e shpejtë deri te pastrimi i detajuar me çmime transparente."
       },
       {
         "title": "Parkimi",
-        "text": "Parkim i drejtpërdrejtë kur blini ose lani makinën. Qasje e hapur, në të njëjtin kompleks."
+        "text": "Parkim i sigurt dhe i aksesueshëm ndërsa bëni blerjet ose lani makinën. Gjithçka në një vend."
       }
     ]
   },
   "services": {
     "label": "Çfarë ofrojmë",
     "title": "Shërbimet tona",
-    "intro": "Tre shërbime në një vend te Kompleksi “Edi Lame” — ushqime, kujdes për makinën dhe parkim.",
+    "intro": "Tri shërbime në një pikë të vetme te Kompleksi “Edi Lame” — ushqime të freskëta, kujdes për makinën dhe parkim komod.",
     "enquire": "Na kontaktoni →",
     "items": [
       {
-        "title": "Tregu",
+        "title": "Marketi",
         "subtitle": "Mini–mesatar",
         "tag": "Dyqan",
-        "desc": "Kemi gjithçka për përditshmërinë — fruta e perime, bulmet, pije, ushqime, bukë, produkte pastrimi e më shumë. I vogël por i plotë, me furnizime të shpeshta që gjithçka të jetë e freskët."
+        "desc": "Gjeni gjithçka që ju nevojitet për familjen — fruta, perime, bulmet, bukë të freskët dhe produkte pastrimi. Një market i plotë me furnizime të shpeshta për cilësi maksimale."
       },
       {
-        "title": "Larja e makinave",
-        "subtitle": "",
+        "title": "Lavazh makinash",
+        "subtitle": "Larje me dorë",
         "tag": "Kujdes",
-        "desc": "Çdo makinë lahet me dorë — jashtë, brenda ose të dyja. Pa makina tuneli: vetëm ujë, sapun dhe kujdes. Çmime të arsyeshme dhe fqinjësisht të mira."
+        "desc": "Makina juaj meriton vëmendje. Ne ofrojmë larje me dorë (jashtë dhe brenda) pa përdorur furça tuneli, duke garantuar mbrojtjen e bojës dhe pastërti të plotë."
       },
       {
         "title": "Parkimi",
-        "subtitle": "",
+        "subtitle": "I garantuar",
         "tag": "Park",
-        "desc": "Vende përpara kur vizitoni tregun ose larjen e makinës. Pa komplikime — parkoni, bëni ç’keni ardhur dhe vazhdoni rrugën."
+        "desc": "Hapësirë e bollshme parkimi për të gjithë klientët tanë. Parkoni me lehtësi, kryeni blerjet dhe vazhdoni rrugën pa stres."
       }
     ]
   },
   "about": {
-    "label": "Rreth kompleksit",
-    "title": "Një kompleks, tre shërbime për çdo ditë",
-    "body": "Kompleksi “Edi Lame” në Zall Herr bashkon një treg praktik, një larje makinash me dorë të besueshme dhe parkim të thjeshtë — që të blini, të pastroni makinën dhe të vazhdoni pa u përshkuar gjithë qytetin.",
+    "label": "Rreth nesh",
+    "title": "Një kompleks, tri shërbime për nevojat tuaja",
+    "body": "Kompleksi “Edi Lame” në Zall Herr është krijuar për t'ju kursyer kohë. Këtu bashkohen marketi praktik, lavazhi profesional me dorë dhe parkimi i thjeshtë — që t’i kryeni të gjitha punët në një ndalesë të vetme.",
     "bullets": [
-      "Ushqime dhe artikuj bazë në një treg mini–mesatar",
-      "Larje makinash me dorë dhe shërbim i drejtpërdrejtë",
-      "Parkim në vend për klientët"
+      "Produkte ushqimore dhe artikuj bazë në një market të pasur",
+      "Larje makinash me dorë me shërbim të dedikuar",
+      "Parkim i dedikuar dhe i sigurt për klientët"
     ]
   },
   "prices": {
     "label": "Çmimet",
-    "title": "Çmime të thjeshta dhe transparente",
-    "intro": "Pa tarifa të fshehura — vetëm çmime të qarta. Preferojmë para në dorë (LEK ose EUR); shihni shënimin më poshtë.",
-    "carWashTitle": "Larja e makinave",
+    "title": "Transparencë dhe thjeshtësi",
+    "intro": "Te ne nuk ka tarifa të fshehura. Çmimet tona janë të qarta dhe konkurruese. Pranojmë pagesa në kesh (LEK ose EUR).",
+    "carWashTitle": "Lavazh makinash",
     "parkingTitle": "Parkimi",
-    "marketTitle": "Tregu",
-    "marketIntro": "Ushqime çdo ditë me çmime të arsyeshme. Pyetni në dyqan për ofertat e ditës.",
+    "marketTitle": "Marketi",
+    "marketIntro": "Ushqime të freskëta çdo ditë me çmime të arsyeshme. Informohuni në dyqan për ofertat e ditës.",
     "lines": {
       "quickRinse": "Shpëlarje e shpejtë",
       "exterior": "Larje e jashtme",
-      "inOut": "Brenda + jashtë",
-      "fullDetail": "Detaj i plotë",
+      "inOut": "Brenda + Jashtë",
+      "fullDetail": "Pastrim i plotë (Detaj)",
       "hours1to3": "1 – 3 orë",
       "hours4to6": "4 – 6 orë",
       "hours24": "24 orë",
       "whileShopping": "Gjatë blerjeve",
       "free": "Falas",
-      "parkingNote": "Klientët që parkojnë me ne mund të marrin një shishe uji falas nga dyqani.",
+      "parkingNote": "Klientët që parkojnë te ne përfitojnë një shishe uji falas nga marketi.",
       "eurLek": "{{eur}} / {{lek}} LEK"
     },
-    "cashTitle": "Pagesa",
-    "cashBody": "Ju lutemi të paguani me para në dorë kur është e mundur, preferuesisht në lekë shqiptare. Pranojmë edhe euro.",
-    "cashNoCards": "Për momentin nuk pranojmë karta ose pagesa dixhitale."
+    "cashTitle": "Mënyra e pagesës",
+    "cashBody": "Ju lutemi, kryeni pagesat në kesh, preferuesisht në Lekë. Pranojmë edhe Euro.",
+    "cashNoCards": "Për momentin nuk ofrojmë pagesa me kartë apo metoda dixhitale."
   },
   "map": {
-    "title": "Na gjeni",
+    "title": "Ku ndodhemi",
     "subtitle": "Kompleksi “Edi Lame” — Zall Herr, Shqipëri",
-    "banner": "Dy pika, i njëjti zonë — zgjidhni hartën që ju duhet.",
-    "marketName": "Tregu",
-    "carWashName": "Larja e makinave"
+    "banner": "Gjithçka në një zonë — zgjidhni hartën sipas shërbimit që kërkoni.",
+    "marketName": "Marketi",
+    "carWashName": "Lavazhi"
   },
   "contact": {
     "label": "Kontakt",
-    "title": "Jemi këtu për t’ju ndihmuar",
-    "body": "Pyetje për tregun, larjen e makinës ose parkimin? Na telefononi ose shkruani në WhatsApp — do t’ju përgjigjemi sa më shpejt.",
+    "title": "Na kontaktoni",
+    "body": "Keni pyetje për marketin, lavazhin apo parkimin? Na telefononi ose na shkruani në WhatsApp — jemi gati t'ju ndihmojmë.",
     "call": "Telefono +355 69 693 9405",
     "whatsapp": "WhatsApp",
-    "note": "Zakonisht përgjigjemi brenda së njëjtës ditë në WhatsApp."
+    "note": "Përgjigjemi brenda ditës për çdo kërkesë në WhatsApp."
   },
   "gallery": {
     "title": "Galeria",
-    "intro": "Pamje nga tregu, larja e makinave dhe parkimi te Kompleksi “Edi Lame”.",
+    "intro": "Pamje nga Marketi, Lavazhi dhe Parkimi në Kompleksin “Edi Lame”.",
     "explore": "Eksploro",
-    "rotating": ["Tregun", "Larjen e makinave", "Parkimin"],
+    "rotating": ["Marketin", "Lavazhin", "Parkimin"],
     "categories": {
-      "market": "Tregu",
-      "carWash": "Larja e makinave",
+      "market": "Marketi",
+      "carWash": "Lavazh makinash",
       "parking": "Parkimi"
     },
     "imageAlt": "{{category}} — Kompleksi Edi Lame"
   },
   "footer": {
-    "tagline": "Treg, larje makinash dhe parkim — një vend i përshtatshëm në Zall Herr.",
-    "navTitle": "Navigo",
-    "visitTitle": "Vizitë",
+    "tagline": "Market, lavazh dhe parkim — gjithçka që ju duhet në Zall Herr.",
+    "navTitle": "Navigimi",
+    "visitTitle": "Na vizitoni",
     "home": "Kreu",
     "hours": "Hapur 08:00 – 21:00 (Hënë–Die)",
     "rights": "© {{year}} {{brand}}. Të gjitha të drejtat e rezervuara.",
-    "credit": "Faqja nga ca-webservices.com",
+    "credit": "Realizuar nga ca-webservices.com",
     "caAlt": "CA Web Services"
   }
 }

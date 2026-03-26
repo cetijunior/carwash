@@ -5,7 +5,11 @@ export default function ServicesSection() {
   const { t } = useTranslation();
   const items = t("services.items", { returnObjects: true });
   const icons = [FaShoppingCart, FaShower, FaParking];
-  const images = ["/images/Store1.jpg", "/images/Carwash.jpg", "/images/Parking.jpg"];
+  const images = [
+    { default: "/images/Store1.jpg", hover: "/images/StoreInside.jpg" },
+    { default: "/images/Carwash.jpg", hover: "/images/CarwashInside.jpg" },
+    { default: "/images/Parking.jpg", hover: "/images/Parking.jpg" },
+  ];
 
   if (!Array.isArray(items)) return null;
 
@@ -33,10 +37,17 @@ export default function ServicesSection() {
               >
                 <div className="relative aspect-[16/10] overflow-hidden bg-brand-navy/5">
                   <img
-                    src={image}
+                    src={image?.default}
                     alt=""
-                    className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03] group-hover:opacity-0"
                   />
+                  {image?.hover ? (
+                    <img
+                      src={image.hover}
+                      alt=""
+                      className="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-[1.03]"
+                    />
+                  ) : null}
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/50 to-transparent opacity-80" />
                   <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-3">
                     <span className="inline-flex items-center justify-center size-12 rounded-full bg-white/95 text-brand-navy shadow-md">
